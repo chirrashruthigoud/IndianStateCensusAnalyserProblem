@@ -1,10 +1,16 @@
-﻿namespace IndianStateCensusAnalyserProblem
+﻿using static IndianStateCensusAnalyserProblem.Analyser;
+
+namespace IndianStateCensusAnalyserProblem
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Indian State Census Analyser Problems");
+            
+                string filePath = "state_census.csv";
+                var analyser = new StateCensusAnalyser(filePath);
+                int numberOfRows = analyser.GetNumberOfRows();
+                Console.WriteLine($"Number of rows: {numberOfRows}");
         }
     }
 }
