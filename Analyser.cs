@@ -8,56 +8,41 @@ namespace IndianStateCensusAnalyserProblem
 {
     public class Analyser
     {
-       
-             public class CSVStateCensus : IEnumerable<string[]>
+
+        private readonly string csv_file = "C:\\Users\\Admin\\source\\repos\\214\\IndianStateCensusAnalyserProblem\\IndianStateCensusAnalyserProblem\\statecensus.csv";
+
+        public Analyser(string csv_file)
         {
-            private readonly string _filePath;
-
-            public CSVStateCensus(string filePath)
-            {
-                _filePath = filePath;
-            }
-
-            public IEnumerator<string[]> GetEnumerator()
-            {
-                using (var reader = new StreamReader("C:\\Users\\Admin\\source\\repos\\214\\IndianStateCensusAnalyserProblem\\IndianStateCensusAnalyserProblem\\statecensus.csv"))
-                {
-                    string line;
-                    while ((line = reader.ReadLine()) != null)
-                    {
-                        yield return line.Split(',');
-                    }
-                }
-            }
-
-            System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
-            {
-                return GetEnumerator();
-            }
+            this.csv_file = csv_file;
         }
 
-        public class StateCensusAnalyser
+        public int GetRecordCount()
         {
-            private readonly string _filePath;
-
-            public StateCensusAnalyser(string filePath)
+            try
             {
-                _filePath = filePath;
+                var csv_data = File.ReadAllLines("C:\\Users\\Admin\\source\\repos\\214\\IndianStateCensusAnalyserProblem\\IndianStateCensusAnalyserProblem\\statecensus.csv").Skip(1);
+                return csv_data.Count();
             }
-
-            public int GetNumberOfRows()
+            catch (FileNotFoundException)
             {
-                var rows = new CSVStateCensus(_filePath);
-                int count = 0;
-
-                foreach (var row in rows)
-                {
-                    count++;
-                }
-
-                return count;
+                throw new ArgumentException("File not found.");
             }
+        }
+    }
 
+    public class StateCensusAnalyser
+    {
+        private readonly string csv_file = "C:\\Users\\Admin\\source\\repos\\214\\IndianStateCensusAnalyserProblem\\IndianStateCensusAnalyserProblem\\statecensus.csv";
+
+        public StateCensusAnalyser(string csv_file)
+        {
+            this.csv_file = csv_file;
+        }
+
+        public int GetRecordCount()
+        {
+            var csv_data = new Analyser("C:\\Users\\Admin\\source\\repos\\214\\IndianStateCensusAnalyserProblem\\IndianStateCensusAnalyserProblem\\statecensus.csv").GetRecordCount();
+            return csv_data;
         }
     }
 }
