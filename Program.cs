@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IndianStateCensusAnalyserProblem;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +11,16 @@ namespace TestProject
     {
         public static void Main(string[] args)
         {
+                var file = "C:\\Users\\Admin\\source\\repos\\214\\IndianStateCensusAnalyserProblem\\IndianStateCensusAnalyserProblem\\statecensus.csv";
             try
             {
-                var csv_data = File.ReadAllLines("C:\\Users\\Admin\\source\\repos\\214\\IndianStateCensusAnalyserProblem\\IndianStateCensusAnalyserProblem\\statecensus.csv").Skip(1);
-                Console.WriteLine(csv_data.Count());
+                var analyser = new StateCensusAnalyser(file);
+                var recordCount = analyser.GetRecordCount();
+                Console.WriteLine($"{file}: Number of records: {recordCount}");
             }
-            catch (Exception ex)
+            catch (InvalidDataTypeException ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine($"Error: {ex.Message}");
             }
 
         }
