@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\bin\Debug\net6.0\IndianStateCensusAnalyserProblem.exe
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\bin\Debug\net6.0\IndianStateCensusAnalyserProblem.deps.json
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\bin\Debug\net6.0\IndianStateCensusAnalyserProblem.runtimeconfig.json
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\bin\Debug\net6.0\IndianStateCensusAnalyserProblem.dll
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\bin\Debug\net6.0\IndianStateCensusAnalyserProblem.pdb
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\IndianStateCensusAnalyserProblem.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\IndianStateCensusAnalyserProblem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\IndianStateCensusAnalyserProblem.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\IndianStateCensusAnalyserProblem.AssemblyInfo.cs
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\IndianStateCensusAnalyserProblem.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\IndianStateCensusAnalyserProblem.dll
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\refint\IndianStateCensusAnalyserProblem.dll
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\IndianStateCensusAnalyserProblem.pdb
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\IndianStateCensusAnalyserProblem.genruntimeconfig.cache
+C:\Users\Admin\source\repos\214\IndianStateCensusAnalyserProblem\IndianStateCensusAnalyserProblem\obj\Debug\net6.0\ref\IndianStateCensusAnalyserProblem.dll
